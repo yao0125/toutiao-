@@ -1,10 +1,11 @@
 <template>
       <el-card>
       <div slot="header">
-        <el-breadcrumb separator-class="el-icon-arrow-right">
+        <my-bread>内容管理</my-bread>
+        <!-- <el-breadcrumb separator-class="el-icon-arrow-right">
           <el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
           <el-breadcrumb-item>内容管理</el-breadcrumb-item>
-        </el-breadcrumb>
+        </el-breadcrumb> -->
       </div>
       <el-form label-width="80px" size="small">
         <el-form-item label="状态：">
@@ -40,10 +41,18 @@
         </el-form-item>
       </el-form>
     </el-card>
+    <!--  筛选结果-->
+    <el-card>
+      <div slot="">
+
+      </div>
+    </el-card>
 </template>
 
 <script>
+import MyBread from '@/components/my-bread'
 export default {
+  components: { MyBread },
   data () {
     return {
       // 筛选项表单数据  提交给后台参数

@@ -2,12 +2,15 @@ import Vue from 'vue'
 import App from './App.vue'
 
 import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
 import '@/style/index.less'
 import axios from '@/api'
 
 // 目录下有默认索引文件
 import router from '@/router'
-import 'element-ui/lib/theme-chalk/index.css'
+
+// import myCom from '@/components'
+// Vue.use(myCom)
 Vue.prototype.$http = axios
 // 控制台提示信息，开发环境来提示 详细一些
 Vue.config.productionTip = false
