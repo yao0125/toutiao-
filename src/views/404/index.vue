@@ -8,7 +8,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped lang="less">
 .container {
     position: absolute;
     width: 100%;

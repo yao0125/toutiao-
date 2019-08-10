@@ -8,9 +8,8 @@ import axios from '@/api'
 
 // 目录下有默认索引文件
 import router from '@/router'
-
-// import myCom from '@/components'
-// Vue.use(myCom)
+import myCom from '@/components'
+Vue.use(myCom)
 Vue.prototype.$http = axios
 // 控制台提示信息，开发环境来提示 详细一些
 Vue.config.productionTip = false

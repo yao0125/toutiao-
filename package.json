@@ -13,6 +13,7 @@
     "index.js": "0.0.3",
     "save": "^2.4.0",
     "vue": "^2.6.10",
+    "vue-quill-editor": "^3.0.6",
     "vue-router": "^3.0.7"
   },
   "devDependencies": {
