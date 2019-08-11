@@ -2,6 +2,7 @@
 // 注册所有的components下的组件为全局组件
 import MyBread from '@/components/my-bread'
 import MyChannel from '@/components/my-channel'
+import MyImage from '@/components/my-image'
 // import MyTest from '@/components/my-test'
 // vue暴露一个对象，对象中有一个选项
 export default {
@@ -10,5 +11,6 @@ export default {
     // vue 全局的vue对象
     Vue.component(MyBread.name, MyBread)
     Vue.component(MyChannel.name, MyChannel)
+    Vue.component(MyImage.name, MyImage)
   }
 }
